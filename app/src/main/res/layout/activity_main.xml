@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.voditko.zappv1.MainActivity">
+<LinearLayout
+    android:orientation="vertical"
+    android:weightSum="2"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_weight="1"
+        android:weightSum="3"
+        android:layout_width="match_parent"
+        android:layout_height="400px">
+
+        <EditText
+            android:id="@+id/queryTxt"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_weight="2"
+            android:background="@drawable/shape"
+            android:ems="10"
+            android:hint="Enter Query Text"
+            android:inputType="text"
+            android:padding="5dp"
+            android:singleLine="true" />
+
+        <Button
+            android:id="@+id/sendRequest"
+            android:layout_width="24dp"
+            android:layout_height="24dp"
+            android:layout_weight="0"
+
+            android:background="@drawable/ic_send_black_24dp"
+             />
+
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/responseTxt"
+        android:layout_width="match_parent"
+        android:layout_height="1200px"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginLeft="21dp"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="17dp"
+        android:layout_weight="1"
+        android:editable="false"
+        android:ems="10"
+        android:hint="Your Query"
+        android:inputType="none"
+        android:visibility="visible" />
+</LinearLayout>
+
+   </RelativeLayout>
